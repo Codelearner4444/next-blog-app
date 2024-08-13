@@ -1,7 +1,7 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
 
-const Outfit = Outfit({ subsets: ["latin"], weight:["400","500","600","700"] })
+const OutfitFont = Outfit({ subsets: ["latin"], weight:["400","500","600","700"] });
 
 export const metadata = {
   title: 'Blog app',
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={Outfit.className}>{children}</body>
+      <body className={OutfitFont.className}>{children}</body>
     </html>
   );
 }
